@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size-high: 48px;
+    --font-size-medium: 36px;
+    --font-size-normal: 20px;
+    --heart-bg-color: #F5F5F5;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Medium.ttf),
+    url(/fonts/Roboto-Regular.ttf);
+}
+
+h1 {
+    font-size: 20px;
+    color: black;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 15px;
+    text-transform: capitalize;
+    color: #78858F;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.5px;
+    letter-spacing: 0.5px;
+}
+
+body {
+    background-color: #BACAD9;
+    width: 100%;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container {
+    width: 360px;
+    height: 367px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 auto;
+    align-self: center;
+    overflow: hidden;
+}
+
+.user {
+    width: 360px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.user-info {
+    width: 190px;
+    height: 52px;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.image {
+    width: 360px;
+    height: 184px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+.topic {
+    width: 100%;
+    height: 73px;
+}
+
+.topic h2 {
+    padding: 25px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    color: #78858F;
+}
+
+.topic h2::first-letter {
+    text-transform: uppercase;
+}
+
+
+.second-container {
+    width: 360px;
+    height: 438px;
+    background-image: linear-gradient(rgba(0,0,0,0.52), rgba(0,0,0,0.52)), url(./assets/image/card.jpg);
+    border-radius: 20px;
+    margin: 0 auto;
+    align-self: center;
+    overflow: hidden;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 31px;
+}
+
+.second-container .text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+.music-player {
+    display: flex;
+    background-color: white;
+    border-radius: 60px;
+    width: 167px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-container {
+    width: 360px;
+    height: 367px;
+    background-color: white;
+    margin: 0 auto;
+    align-self: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.container-four {
+    width: 360px;
+    height: 554px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.container-four .left {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 25px 50px 0;
+    height: 100%;
+    justify-content: space-between;
+    width: 66px;
+}
+
+.container-four .left .left-text .buy {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-high);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.container-four .left .left-text .now {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-medium);
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: capitalize;
+} 
+
+.container-four .left .left-text .price {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-normal);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-four .left .circle1 {
+    width: 60px;
+    height: 60px;
+    background-color: var(--heart-bg-color);
+    border-radius: 50px;
+}
+
+.container-four .left .circle1 svg {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+}
+
+.container-four .left .left-text span {
+    padding: 24px 0;
+}
+
+.container-five {
+    width: 360px;
+    height: 541.5px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.five-text {
+    padding: 25px;
+}
+
+.five-text h3:first-of-type{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.five-text h3:nth-of-type(2) {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+
+.five-button {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.container-five .five-button button {
+    width: 310px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #FE1A59;
+    border: none;
+}
+
+.container-five .five-button button span {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.container-six {
+    width: 360px;
+    height: 534px;
+    background: url(./assets/image/paint.jpg);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content-six {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.15) 40.63%, #000 93.75%);
+    width: 100%;
+    padding: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-six .content-six .heart-six span,
+.container-six .content-six .share-six span,
+.container-six .content-six .message-six span {
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-self: center;
+    display: inline-block;
+    text-align: center;
+}
+
+.container-six .content-six .heart-six,
+.container-six .content-six .share-six,
+.container-six .content-six .message-six{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-correct {
+    display: flex;
+    gap: 10px;
+}
+
+.container-seven {
+    height: 527px;
+    width: 360px;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+.container-seven .about span{
+    display: block;
+    gap: 5px;
+}
+
+.container-seven .about span:nth-of-type(1) {
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.container-seven .about span:nth-of-type(2) {
+    color: #828282;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.container-seven .avatar-girl {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: linear-gradient(90deg, #01DCEE 0%, #01F4A3 100%);
+    border-radius: 50%;
+}
+
+.container-seven .avatar-girl .content-girl{
+    position: absolute;
+    border:  4px solid black;
+    inset: 4px;
+    border-radius: 50px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.container-seven .avatar-girl .content-girl img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-seven .design-card span {
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container-seven .design-card {
+    display: flex;
+    justify-content: center;
+}
+
+.container-seven .mini-lorem span {
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+}
+
+.container-seven .mini-lorem {
+    display: flex;
+    justify-content: center;
+}
+
+.container-seven .girl-button button {
+    padding: 16px 20px;
+    border-radius: 50px;
+    border-style: none;
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+}
+
+.container-seven .girl-button button span {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+}
+
+button {
+    cursor: pointer;
+}
