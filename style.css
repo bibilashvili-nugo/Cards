@@ -487,6 +487,8 @@ button {
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex-shrink: 1;
+    border: 10px solid #BACAD9;
 }
 
 .container-eight .project-view {
@@ -494,6 +496,7 @@ button {
     width: 100%;
     padding: 50px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container-eight .project-view .left {
