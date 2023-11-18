@@ -553,6 +553,7 @@ button {
 .container-eight .grapic .lines {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .container-eight .grapic .lines .line {
@@ -560,15 +561,24 @@ button {
     height: 1px;
     background: #151515;
     margin: 30px 52px;
-    position: relative;
+    /* position: absolute;
+    top: 0; */
 }
 
 .container-eight .grapic .lines .line:nth-of-type(1){
     margin-top: 0;
 }
 
-.container-eight .grapic .lines svg {
+.container-eight .grapic .fix-svg svg {
     position: absolute;
     z-index: 1;
+    /* top: 0; */
+    width: 100%;
+    height: 100%;
 }
 
+/* .container-eight .grapic .lines .fix-svg  {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
