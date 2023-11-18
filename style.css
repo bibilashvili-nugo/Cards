@@ -575,9 +575,23 @@ button {
 .container-eight .grapic .fix-svg svg {
     position: absolute;
     z-index: 1;
-    /* top: 0; */
+    top: 15%;
+    right: 0%;
     width: 100%;
     height: 100%;
+}
+
+.container-eight .grapic .fix-svg .second-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.container-eight .grapic .fix-svg .second-svg svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 20%;
+    right: 40%;
 }
 
 /* .container-eight .grapic .lines .fix-svg  {
