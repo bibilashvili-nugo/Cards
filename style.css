@@ -565,8 +565,6 @@ button {
     height: 1px;
     background: #151515;
     margin: 30px 52px;
-    /* position: absolute;
-    top: 0; */
 }
 
 .container-eight .grapic .lines .line:nth-of-type(1){
@@ -582,38 +580,6 @@ button {
     height: 100%;
 }
 
-/* .container-eight .grapic .fix-svg .second-svg {
-    width: 100%;
-    height: 100%;
-}
-
-.container-eight .grapic .fix-svg .second-svg svg {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 20%;
-    right: 40%;
-} */
-
-/* .container-eight .grapic .lines .fix-svg  {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-} */
-
-/* @media (max-width: 318px) {
-    .container-eight .grapic .fix-svg .second-svg svg {
-        top: 30%;
-    }
-} */
-
-
-/* .container-eight .grapic .fix-svg svg:nth-of-type(2) {
-    scale: 0.1;
-    position: absolute;
-    top: -50%;
-} */
-
 .container-eight .grapic .fix-svg .second-svg svg {
     scale: 0.1;
     position: absolute;
@@ -621,9 +587,23 @@ button {
     right: -8%;
 }
 
-/* .container-eight .grapic .lines .line:nth-of-type(7){
-    margin-bottom: 0;
-} */
+.container-eight .grapic .fix-svg .second-svg::before{
+    content: "564";
+    border-radius: 10px 10px 10px 0px;
+    background: #FA0125;
+    box-shadow: 0px 4px 9px -2px rgba(0, 0, 0, 0.95);
+    position: absolute;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 43px; 
+    letter-spacing: 0.5px;
+    padding: 0px 10px;
+    left: 60%;
+    top: 3%;
+}
 
 .container-eight .time {
     display: inline-flex;
@@ -644,6 +624,9 @@ button {
 @media (max-width: 500px) {
     .container-eight .grapic .fix-svg .second-svg svg {
         top: -10%;
+    }
+    .container-eight .grapic .fix-svg .second-svg::before{
+        top: 13%;
     }
 }
 
