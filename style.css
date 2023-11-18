@@ -619,3 +619,9 @@ button {
     top: -23%;
     right: -8%;
 }
+
+@media (max-width: 354px) {
+    .container-eight .grapic .fix-svg .second-svg svg {
+        top: -10%;
+    }
+}
